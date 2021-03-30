@@ -9,7 +9,7 @@ All requirements for *TaughtNet* can be found in <code>requirements.txt</code>. 
 
 To train your own taughtNet, you need to follow these steps:
 
-1. Train teachers
+1. **Train teachers**
 
         !python train_teacher.py \
         --data_dir 'data/BC2GM' \
@@ -18,25 +18,25 @@ To train your own taughtNet, you need to follow these steps:
         --logging_dir 'models/Teachers/BC2GM' \
         --save_steps 10000 
   
-2. Aggregate datasets: generate *global* datasets for teachers (to get their predictions over all the set of data) and student (to train it)
+2. **Aggregate datasets**: generate *global* datasets for teachers (to get their predictions over all the set of data) and student (to train it)
 
         !python generate_global_datasets.py
 
-3. Generate teachers distribution: aggregate the output distributions of teachers to get the general distribution for all the entity types
+3. **Generate teachers distribution**: aggregate the output distributions of teachers to get the general distribution for all the entity types
 
         !python generate_teachers_distributions.py \
         --data_dir 'data' \
         --teachers_dir 'models/Teachers' \
         --model_name_or_path 'dmis-lab/biobert-base-cased-v1.1'
 
-4. Train the student!
+4. **Train the student!**
 
         !python train_student.py \
         --data_dir 'data/GLOBAL/Student' \
         --model_name_or_path 'dmis-lab/biobert-base-cased-v1.1' \
         --output_dir 'models/Student' \
         --logging_dir 'models/Student' \
-    --save_steps 596 
+        --save_steps 596 
 
 ## 📕 Citation
 Not yet published 
