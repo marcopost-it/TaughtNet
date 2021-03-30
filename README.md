@@ -38,5 +38,7 @@ To train your own taughtNet, you need to follow these steps:
         --logging_dir 'models/Student' \
         --save_steps 596 
 
+The notebook <code>example.ipynlb</code> reported in this repo contains an example by using the following datasets: *BC2GM*, *BC5CDR-chem*, *NCBI-disease*
+
 ## 📕 Citation
 Not yet published 
