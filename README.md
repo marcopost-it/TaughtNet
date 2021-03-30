@@ -9,14 +9,13 @@ All requirements for *TaughtNet* can be found in <code>requirements.txt</code>. 
 
 To train your own taughtNet, you need to follow these steps:
 
-### 1 Train teachers
-
-    !python train_teacher.py \
-    --data_dir 'data/BC2GM' \
-    --model_name_or_path 'dmis-lab/biobert-base-cased-v1.1' \
-    --output_dir 'models/Teachers/BC2GM' \
-    --logging_dir 'models/Teachers/BC2GM' \
-    --save_steps 10000 
+1. Train teachers
+        !python train_teacher.py \
+        --data_dir 'data/BC2GM' \
+        --model_name_or_path 'dmis-lab/biobert-base-cased-v1.1' \
+        --output_dir 'models/Teachers/BC2GM' \
+        --logging_dir 'models/Teachers/BC2GM' \
+        --save_steps 10000 
   
 ### 2 Aggregate datasets
 Generate *global* datasets for teachers (to get their predictions over all the set of data) and student (to train it)
