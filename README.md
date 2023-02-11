@@ -1,6 +1,6 @@
 # TaughtNet
 
-This repository contains the code for *TaughtNet: Knowledge Distillation from Deep Bidirectional Transformers for Multi-task Biomedical Named Entity Recognition*. The paper introduces *TaughtNet*, a knowledge distillation based framework which allows to leverage multiple data sources for Named Entity Recognition. For each data source, we train a teacher which can be considered as an "expert" in recognizing a specific entity type (the entity type for which the dataset has been annotated for). Then, a *student* distills the knowledge of multiple teachers to learn to recognize multiple entity types.
+This repository contains the code for [*TaughtNet: Knowledge Distillation from Deep Bidirectional Transformers for Multi-task Biomedical Named Entity Recognition*](https://ieeexplore.ieee.org/document/10041925). The paper introduces *TaughtNet*, a knowledge distillation based framework which allows to leverage multiple data sources for Named Entity Recognition. For each data source, we train a teacher which can be considered as an "expert" in recognizing a specific entity type (the entity type for which the dataset has been annotated for). Then, a *student* distills the knowledge of multiple teachers to learn to recognize multiple entity types.
 
 ## 🔧 Setup
 All requirements for *TaughtNet* can be found in <code>requirements.txt</code>. You can install all required packages with <code>pip install -r requirements.txt</code>
