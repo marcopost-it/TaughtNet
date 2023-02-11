@@ -7,7 +7,8 @@ All requirements for *TaughtNet* can be found in <code>requirements.txt</code>. 
 
 ## 💻 Usage
 
-To train your own taughtNet, you need to follow these steps:
+A model trained on disorders, chemical compounds and genes (with the datasets used in the paper) is available on [huggingface](https://huggingface.co/marcopost-it/TaughtNet-disease-chem-gene).
+To train your own TaughtNet, you need to follow these steps:
 
 1. **Train teachers**
 
@@ -41,4 +42,13 @@ To train your own taughtNet, you need to follow these steps:
 The notebook <code>example.ipynlb</code> reported in this repo contains an example by using the following datasets: *BC2GM*, *BC5CDR-chem*, *NCBI-disease*
 
 ## 📕 Citation
-Not yet published 
+        @ARTICLE{10041925,
+        author={Moscato, Vincenzo and Postiglione, Marco and Sansone, Carlo and Sperli, Giancarlo},
+        journal={IEEE Journal of Biomedical and Health Informatics}, 
+        title={TaughtNet: Learning Multi-Task Biomedical Named Entity Recognition From Single-Task Teachers}, 
+        year={2023},
+        volume={},
+        number={},
+        pages={1-12},
+        doi={10.1109/JBHI.2023.3244044}}
+
